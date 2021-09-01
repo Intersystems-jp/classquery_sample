@@ -25,14 +25,14 @@ TestSP.xml, userquerytest.xml をインポートします。
 #### 1. グローバル変数を作成します。
  
  
-#### 2. 任意のグローバル変数名で、適当にデータを作成してください。
+任意のグローバル変数名で、適当にデータを作成してください。
   
 例）
 ```
 for i=1:1:10 set ^test(i)="あいうえお"_i
 ```
 
-#### 3. COSサンプルを実行します。
+#### 2. COSサンプルを実行します。
 ```
 Do ^UserQuerytest()
 ```
@@ -40,7 +40,7 @@ Do ^UserQuerytest()
 実行例）
 ```
 USER>do ^UserQuerytest()
-グローバル名を入力 ^test
+グローバル名を入力 ^test      // ここで 1 で作成したグローバルを指定する
 ^test(1) = あいうえお1
 ^test(2) = あいうえお2
 ^test(3) = あいうえお3
@@ -53,7 +53,7 @@ USER>do ^UserQuerytest()
 ^test(10) = あいうえお10
 ```
   
-#### 4. CLASSPATH にjarファイルを追加します。
+#### 3. 環境変数 CLASSPATH にjarファイルを追加します。
   
 jarファイルは、以下のディレクトリにあります。
   
@@ -62,7 +62,7 @@ jarファイルは、以下のディレクトリにあります。
 V2021.1 の場合は以下になります。  
 	＜IRISインストールディレクトリ＞\dev\java\lib\JDKnn\intersystems-jdbc-3.n.0.jar
   
-#### 5. Javaサンプルをコンパイル・実行します。  
+#### 4. Javaサンプルをコンパイル・実行します。  
 ```  
 C:\temp\java>javac IRISPersentG.java
 
