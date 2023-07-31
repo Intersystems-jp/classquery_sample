@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2023.1.1 (Build 380U)" ts="2023-07-31 15:03:04">
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2023.1.1 (Build 380U)" ts="2023-07-31 15:12:02">
 <Class name="User.TestStoredProc1">
 <ClassType/>
 <ProcedureBlock>1</ProcedureBlock>
 <Super>%RegisteredObject</Super>
-<TimeChanged>66686,54149.4157709</TimeChanged>
+<TimeChanged>66686,54676.7783766</TimeChanged>
 <TimeCreated>58878,60016</TimeCreated>
 
 <Projection name="JavaProjection1">
@@ -54,22 +54,6 @@
  ; fill in Row with data for this row
  Set Row=$LB($na(@glvn@(x)),@glvn@(x))
  Quit $$$OK
-]]></Implementation>
-</Method>
-
-<Method name="MExecute">
-<ClassMethod>1</ClassMethod>
-<FormalSpec>command:%String</FormalSpec>
-<ReturnType>%String</ReturnType>
-<Implementation><![CDATA[
- Set %value = ""
- If $Extract(command,1)="=" {
-   Set command = "Set %value "_command
- }
- Xecute command
- Set value = %value
- Kill %value
- Quit value
 ]]></Implementation>
 </Method>
 
