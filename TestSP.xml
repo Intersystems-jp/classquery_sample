@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2018.1.1 (Build 643U)" ts="2019-01-31 17:46:32">
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2023.1.1 (Build 380U)" ts="2023-07-31 15:03:04">
 <Class name="User.TestStoredProc1">
 <ClassType/>
 <ProcedureBlock>1</ProcedureBlock>
 <Super>%RegisteredObject</Super>
-<TimeChanged>59570,67975.910729</TimeChanged>
+<TimeChanged>66686,54149.4157709</TimeChanged>
 <TimeCreated>58878,60016</TimeCreated>
 
 <Projection name="JavaProjection1">
@@ -80,22 +80,5 @@
 <Parameter name="CONTAINID" value="0"/>
 <Parameter name="ROWSPEC" value="Node:%String, Value:%String"/>
 </Query>
-
-<Storage name="Default">
-<Type>%Storage.Persistent</Type>
-<DataLocation>^ooTestStoredProc1D</DataLocation>
-<DefaultData>TestStoredProc1DefaultData</DefaultData>
-<IdLocation>^ooTestStoredProc1D</IdLocation>
-<IndexLocation>^ooTestStoredProc1I</IndexLocation>
-<StreamLocation>^User.TestStoredProc1S</StreamLocation>
-<Data name="TestStoredProc1DefaultData">
-<Value name="1">
-<Value>glvn</Value>
-</Value>
-<Value name="2">
-<Value>%%CLASSNAME</Value>
-</Value>
-</Data>
-</Storage>
 </Class>
 </Export>
